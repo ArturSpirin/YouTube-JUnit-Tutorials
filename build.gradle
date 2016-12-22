@@ -1,0 +1,15 @@
+group 'junitDemo'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.5
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'junit:junit:4.11'
+    compile 'org.apache.clerezza.ext:org.json.simple:0.4'
+}
