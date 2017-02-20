@@ -29,7 +29,10 @@ public class Retry implements TestRule {
                         return;
                     }catch (Throwable e){
                         throwable = e;
-                        System.out.println("Run "+(i+1)+" failed!");
+                        if(throwable.getClass() != org.junit.internal.AssumptionViolatedException.class)
+                            System.out.println("Run "+(i+1)+" failed!");
+                        else
+                            throw throwable;
                     }
                 }
                 System.out.println("Giving up after "+rc+" failures");

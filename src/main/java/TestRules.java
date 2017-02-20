@@ -13,22 +13,22 @@ public class TestRules {
 
     @BeforeClass
     public static void beforeClass(){
-        System.out.println("I'm beforeClass method from TestSuite_1!");
+        System.out.println("I'm beforeClass method from TestRules!");
     }
 
     @Before
     public void before(){
-        System.out.println("I'm before method from TestSuite_1!");
+        System.out.println("I'm before method from TestRules!");
     }
 
     @After
     public void after(){
-        System.out.println("I'm after method from TestSuite_1!");
+        System.out.println("I'm after method from TestRules!");
     }
 
     @AfterClass
     public static void afterClass(){
-        System.out.println("I'm afterClass method from TestSuite_1!");
+        System.out.println("I'm afterClass method from TestRules!");
     }
 
     @Rule
